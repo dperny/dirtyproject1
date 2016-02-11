@@ -1,0 +1,11 @@
+#!/bin/python3
+
+from main import sort
+import sys
+
+array = []
+with open(sys.argv[1]) as f:
+  for token in f.read().split():
+    array.append(int(token))
+
+print(sort(array))
